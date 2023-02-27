@@ -16,7 +16,7 @@ public class Dice {
         return new Dice(sides);
     }
 
-    public String roll() {
-        return String.valueOf(random.nextInt(sides + 1));
+    public Integer roll() {
+        return random.nextInt(sides) + 1;
     }
 }
