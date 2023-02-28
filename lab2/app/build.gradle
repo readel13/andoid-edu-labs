@@ -6,6 +6,10 @@ android {
     namespace 'com.example.lab2'
     compileSdk 33
 
+    viewBinding {
+        enabled true
+    }
+
     defaultConfig {
         applicationId "com.example.lab2"
         minSdk 27
@@ -29,6 +33,8 @@ android {
 }
 
 dependencies {
+
+    implementation 'com.google.guava:guava:31.1-jre'
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
